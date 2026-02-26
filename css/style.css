@@ -4745,3 +4745,155 @@ h6 {
     opacity: 0.4;
     font-weight: 300;
 }
+
+/* ========== FEATURES SECTION DEPARTAMENTOS ========== */
+.features_section {
+    padding: 80px 0;                /* Espacio superior e inferior */
+    background: transparent;        /* Fondo transparente (hereda el de la web) */
+}
+
+.features_section .feature-item {
+    text-align: center;             /* Centra todo */
+    margin-bottom: 30px;             /* Espacio entre filas en móvil */
+}
+
+.features_section .feature-icon {
+    margin-bottom: 15px;             /* Separación icono - texto */
+}
+
+.features_section .feature-icon i {
+    /* Convertimos el sólido en línea */
+    color: transparent;                      /* Relleno transparente */
+    -webkit-text-stroke: 1.5px #5D802D;      /* Contorno verde */
+    font-size: 48px;                          /* Tamaño del ícono */
+    display: inline-block;
+}
+
+/* Efecto hover (opcional) */
+.features_section .feature-item:hover .feature-icon i {
+    -webkit-text-stroke-color: #8f9195;      /* Cambia a gris al pasar el mouse */
+    /* O podés hacer que se llene sólido: */
+    /* color: #5D802D; */
+    /* -webkit-text-stroke: 0; */
+}
+
+
+.features_section .feature-text h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2a2a2a;                  /* Mismo color que títulos de contacto */
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsive: tablets y móviles */
+@media (max-width: 991px) {
+    .features_section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .features_section {
+        padding: 40px 0;
+    }
+    .features_section .feature-icon i {
+        font-size: 40px;
+    }
+    .features_section .feature-text h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .features_section .feature-item {
+        margin-bottom: 25px;
+    }
+}
+
+/* ===== SECCIÓN DE BOTONES ===== */
+.cta-buttons-section {
+    padding: 20px 0 90px 0;            /* Ajustá el espacio vertical */
+    background: transparent;
+    text-align: center;         /* Centra los botones */
+    margin-bottom: 40px;
+}
+
+.cta-buttons-wrapper {
+    display: flex;       /* Se adapta al contenido */
+    gap: 20px;                  /* Separación horizontal */
+    flex-wrap: wrap;            /* En móvil se apilan si no caben */
+    justify-content: center;    /* Centrado */
+}
+
+.cta-buttons-wrapper a {
+    width: 180px;            /* mismo ancho fijo */
+    text-align: center;
+}
+
+/* Estilo base común */
+.cta-buttons-wrapper a {
+    display: inline-block;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 0;           /* Recto, como el original */
+}
+
+/* Botón Reservar (verde) */
+.cta-buttons-wrapper .btn-reservar {
+    background: #5D802D;
+    color: #fff;
+}
+
+.cta-buttons-wrapper .btn-reservar:hover {
+    background: #fff;
+    color: #5D802D;
+    border-color: #5D802D;
+}
+
+/* Botón Más información (gris) */
+.cta-buttons-wrapper .btn-masinfo {
+    background: #8f9195;        /* Gris de los íconos de contacto */
+    color: #fff;
+}
+
+.cta-buttons-wrapper .btn-masinfo:hover {
+    background: #fff;
+    color: #8f9195;
+    border-color: #8f9195;
+}
+
+/* Responsive: en pantallas pequeñas se apilan verticalmente */
+@media (max-width: 480px) {
+    .cta-buttons-wrapper {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    .cta-buttons-wrapper a {
+        width: 100%;            /* Botones a lo ancho en móvil */
+        text-align: center;
+    }
+}
+
+/* --DEPARTAMENTO 1--*/
+.about_depto1_1 {
+    background-image: url(../img/banner/depto1/depto1.png)
+}
+.about_depto1_2 {
+    background-image: url(../img/banner/depto1/depto2.png)
+}
+.about_depto1_3 {
+    background-image: url(../img/banner/depto1/depto3.png)
+}
+.about_depto1_4 {
+    background-image: url(../img/banner/depto1/depto4.png)
+}
+.about_depto1_5 {
+    background-image: url(../img/banner/depto1/depto5.png)
+}
+
