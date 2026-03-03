@@ -1388,7 +1388,7 @@ h3 {
     background: linear-gradient(to bottom, #fff 0%, #000 77%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     z-index: 1;
-    opacity: .5
+    opacity: .2
 }
 
 .features_room .rooms_here .single_rooms .room_thumb {
