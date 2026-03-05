@@ -909,7 +909,7 @@ h3 {
     color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-size: 100px;
-    text-transform: capitalize;
+    text-transform: none;
     letter-spacing: 2px;
     font-weight: 400;
     margin-bottom: 4px
@@ -1037,6 +1037,10 @@ h3 {
 .about_area .about_thumb2 .img_2 {
     margin-top: 40px;
     margin-left: 10px
+}
+
+.about_bg_0 {
+    background-image: url(../img/banner/banner0.png)
 }
 
 .about_bg_1 {
@@ -1871,7 +1875,7 @@ h3 {
     background-position: center center;
     text-align: center;
     padding: 269px 0 159px 0;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
