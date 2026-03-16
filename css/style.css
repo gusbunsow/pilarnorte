@@ -1716,6 +1716,112 @@ h3 {
     border: 1px solid #E0E0E0
 }
 
+/* ===== BARRA DE RESERVAS (INDEX) ===== */
+.reservation-bar {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;  /* o fixed si querés que quede pegada al header al hacer scroll */
+    z-index: 100;
+}
+
+.reservation-bar .container {
+    max-width: 1200px;
+}
+
+.reservation-bar .row {
+    margin: 0 -10px;
+}
+
+.reservation-bar .col-lg-2,
+.reservation-bar .col-md-6 {
+    padding: 0 10px;
+}
+
+.reservation-bar input,
+.reservation-bar select {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    border-radius: 0; /* recto, como el diseño */
+    margin-bottom: 0;
+}
+
+.reservation-bar input:focus,
+.reservation-bar select:focus {
+    outline: none;
+    border-color: #5D802D;
+}
+
+.reservation-bar .btn-reservar-bar {
+    width: 100%;
+    height: 45px;
+    background: #5D802D;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0 !important;
+}
+
+.reservation-bar .btn-reservar-bar:hover {
+    background: #fff;
+    color: #5D802D;
+    border: 1px solid #5D802D;
+}
+
+/* Estilos para el datepicker (si usás gj-datepicker) */
+.reservation-bar .gj-datepicker {
+    width: 100%;
+}
+
+.reservation-bar .gj-datepicker input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.reservation-bar .gj-datepicker-md [role="right-icon"] {
+    top: 12px;
+    right: 10px;
+    color: #888;
+}
+
+/* Responsive: en móviles se apilan verticalmente */
+@media (max-width: 991px) {
+    .reservation-bar .col-md-6 {
+        margin-bottom: 15px;
+    }
+    .reservation-bar .btn-reservar-bar {
+        height: 45px;
+    }
+}
+
+/* Si querés que la barra sea fija al hacer scroll (sticky) */
+/* .reservation-bar {
+    position: sticky;
+    top: 0;
+} */
+
+/* Forzar bordes rectos en la barra de reservas */
+.reservation-bar input,
+.reservation-bar select,
+.reservation-bar .gj-datepicker input {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+/* ===== FIN BARRA DE RESERVAS (INDEX) ===== */
+
 .footer {
     background: #000
 }

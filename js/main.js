@@ -344,3 +344,14 @@ mailChimp();
         });
 
 })(jQuery);	
+
+//data picker nuevo motor
+
+$('#datepicker-bar-checkin').datepicker({
+    format: 'dd/mm/yyyy',
+    showRightIcon: true
+});
+$('#datepicker-bar-checkout').datepicker({
+    format: 'dd/mm/yyyy',
+    showRightIcon: true
+});

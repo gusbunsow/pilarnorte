@@ -130,7 +130,7 @@
                                     </ul>
                                 </div>
                                 <div class="book_btn d-none d-lg-block">
-                                    <a class="popup-with-form" href="#">Reservar</a>
+                                    <a class="popup-with-form" href="#test-form">Reservar</a>
                                 </div>
                             </div>
                         </div>
@@ -173,6 +173,51 @@
             </div>
     </div>
     <!-- slider_area_end -->
+
+<!-- BARRA DE RESERVAS (solo index) -->
+<div class="reservation-bar">
+    <div class="container">
+        <form class="reservation-form" action="#" method="get">
+            <div class="row align-items-end">
+                <div class="col-lg-2 col-md-6">
+                    <input id="datepicker-bar-checkin" class="datepicker" placeholder="Check in" readonly>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <input id="datepicker-bar-checkout" class="datepicker" placeholder="Check out" readonly>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <select class="form-select" name="adults">
+                        <option value="1">1 Adulto</option>
+                        <option value="2">2 Adultos</option>
+                        <option value="3">3 Adultos</option>
+                        <option value="4">4 Adultos</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <select class="form-select" name="children">
+                        <option value="">Niños</option>
+                        <option value="1">1 Niño</option>
+                        <option value="2">2 Niños</option>
+                        <option value="3">3 Niños</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <select class="form-select" name="room_type">
+                        <option value="">Tipo de dpto.</option>
+                        <option value="1">1 Dormitorio</option>
+                        <option value="2">2 Dormitorios</option>
+                        <option value="3">1 Dorm. (PA)</option>
+                        <option value="4">2 Dorm. (PA)</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <button type="submit" class="btn-reservar-bar">Reservar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- BARRA DE RESERVAS (solo index) -->
 
     <!-- about_area_start -->
     <div class="about_area">
@@ -900,18 +945,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Pilar
         <form id="test-form" class="white-popup-block mfp-hide">
                 <div class="popup_box ">
                         <div class="popup_inner">
-                            <h3>Check Availability</h3>
+                            <!--<h3>Check Availability</h3>-->
                             <form action="#">
                                 <div class="row">
                                     <div class="col-xl-6">
-                                        <input id="datepicker" placeholder="Check in date">
+                                        <input id="datepicker" placeholder="Check in">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input id="datepicker2" placeholder="Check out date">
+                                        <input id="datepicker2" placeholder="Check out">
                                     </div>
                                     <div class="col-xl-6">
                                         <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Adult">1</option>
+                                            <option data-display="Adultos">1</option>
                                             <option value="1">2</option>
                                             <option value="2">3</option>
                                             <option value="3">4</option>
@@ -919,7 +964,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Pilar
                                     </div>
                                     <div class="col-xl-6">
                                         <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Children">1</option>
+                                            <option data-display="Niños">1</option>
                                             <option value="1">2</option>
                                             <option value="2">3</option>
                                             <option value="3">4</option>
@@ -927,15 +972,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Pilar
                                     </div>
                                     <div class="col-xl-12">
                                         <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Room type">Room type</option>
-                                            <option value="1">Laxaries Rooms</option>
-                                            <option value="2">Deluxe Room</option>
-                                            <option value="3">Signature Room</option>
-                                            <option value="4">Couple Room</option>
+                                            <option data-display="Tipo de departamento">Tipo de departamento</option>
+                                            <option value="1">Departamento de 1</option>
+                                            <option value="2">Departamento de 2</option>
+                                            <option value="3">Departamento de 1 (PA)</option>
+                                            <option value="4">Departamento de 2 (PA)</option>
                                         </select>
                                     </div>
                                     <div class="col-xl-12">
-                                        <button type="submit" class="boxed-btn3">Check Availability</button>
+                                        <button type="submit" class="boxed-btn3">Reservar</button>
                                     </div>
                                 </div>
                             </form>
