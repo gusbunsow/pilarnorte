@@ -1266,11 +1266,11 @@ h3 {
     line-height: 28px;
     position: relative;
     z-index: 9;
-    padding-left: 23px
+    /*padding-left: 23px*/
 }
 
 .offers_area .single_offers ul li::before {
-    position: absolute;
+    /*position: absolute;*/
     content: "";
     width: 8px;
     height: 8px;
@@ -4901,10 +4901,14 @@ h6 {
     font-size: 18px;
     font-weight: 500;
     color: #2a2a2a;                  /* Mismo color que títulos de contacto */
-    margin: 0;
+   /* margin: 0; */
     line-height: 1.4;
 }
 
+.features_section .feature-text p {
+    text-align: left;
+
+}
 /* Responsive: tablets y móviles */
 @media (max-width: 991px) {
     .features_section {
